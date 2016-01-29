@@ -11,6 +11,7 @@
 
 	var	region = "us-west-1",
 		endpoint = "https://dynamodb.us-west-1.amazonaws.com/";
+		 //endpoint = "http://localhost:8000";
 
 	var credentials = new AWS.SharedIniFileCredentials({profile: 'mgable'});
 	AWS.config.credentials = credentials;
