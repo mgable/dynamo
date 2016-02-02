@@ -12,7 +12,7 @@ AWS.config.update({
 var dynamodb = new AWS.DynamoDB();
 
 var params = {
-    TableName : "advertising_tins_store",
+    TableName : "advertising_tins_test_store",
     KeySchema: [       
         { AttributeName: "link", KeyType: "HASH"},  //Partition key
         { AttributeName: "date", KeyType: "RANGE" }  //Sort key

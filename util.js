@@ -17,9 +17,9 @@
 	AWS.config.credentials = credentials;
 
 	AWS.config.update({
-	    region: region,
-	    endpoint: endpoint
-	});
+    region: "us-west-2",
+    endpoint: "http://localhost:8000"
+});
 
 	var docClient = new AWS.DynamoDB.DocumentClient(),
 		dynamodb = new AWS.DynamoDB();

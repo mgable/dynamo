@@ -2,14 +2,13 @@
 
 var util = require('./util.js'),
   fs = require('fs'),
-  category = "advertising_tins",
   _ = require("underscore");
 
 console.log("Importing items into DynamoDB. Please wait.");
 
-var items = JSON.parse(fs.readFileSync('advertising_tins_raw_20160128.json', 'utf8'));
+var items = JSON.parse(fs.readFileSync('aws_advertising_tins_raw_20160201.json', 'utf8'));
 
-var key = parseInt(util.getDateString(new Date()),10);
+var key = 20160201; //parseInt(util.getDateString(new Date()),10);
 
 console.info(key);
 var params = {
